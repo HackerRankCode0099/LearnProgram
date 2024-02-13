@@ -1,24 +1,17 @@
-/* Write a program perimetre of Rectangle. Length is 12 and Beadth is 3.5 perimetre is calculated
-   as. */
+/*  Write a program to input two number from the user a and b , print all the number between a and b           
+    (a and b both are not included) ? */
 
-    #include<stdio.h>
-    #include<conio.h>
-    void main()
-    {
-        int Length = 12;
+        #include<stdio.h>
+        #include<conio.h>
+        void main()
+        {
+            int a , b , i ;
+            printf("Enter the value a & b");
+            scanf("%d%d",&a,&b);
+            for(i=a+1; i<=b-1; i++)
+            {
+                printf("%d\n",i);
+            }
+            getch();
 
-        float Breadth = 3.5 , perimetre;
-
-            perimetre = 2*(Length * Breadth);
-
-                printf("perimetre of rectangle = %f", perimetre);
-
-        getch();
-
-    }
-
-
-
-
-
-
+        }
